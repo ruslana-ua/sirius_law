@@ -3045,6 +3045,8 @@ body::after {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  max-width: 1105px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
   padding: 40px 0 0 0
@@ -3087,6 +3089,10 @@ body::after {
 }
 .stat-about {
   padding: 140px 0 70px 0
+}
+.stat-about__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .stat-about__top {
   padding: 32px 0 30px 0;
@@ -3151,6 +3157,10 @@ body::after {
 }
 .values-about {
   padding: 75px 0 90px 0
+}
+.values-about__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .values-about__top {
   padding-bottom: 76px
@@ -3225,7 +3235,9 @@ body::after {
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
-  background: var(--wh)
+  background: var(--wh);
+  max-width: 1105px;
+  margin: 0 auto
 }
 .target-about__content {
   width: calc(49% - 14px)
@@ -3259,6 +3271,10 @@ body::after {
 }
 .team {
   padding: 66px 0 120px 0
+}
+.team__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .team__top {
   display: flex;
@@ -3381,7 +3397,9 @@ body::after {
 .sitemap__wrapper {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start
+  justify-content: flex-start;
+  max-width: 1105px;
+  margin: 0 auto
 }
 .sitemap__label--wrap {
   width: calc(32% - 18px)
@@ -3497,7 +3515,9 @@ body::after {
 }
 .page-blog__wrapper {
   position: relative;
-  z-index: 2
+  z-index: 2;
+  max-width: 1105px;
+  margin: 0 auto
 }
 .page-blog__title {
   width: 57%;
@@ -3513,6 +3533,10 @@ body::after {
 }
 .current--p2 {
   padding: 60px 0 180px 0
+}
+.current__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .current__wrapper {
   display: flex;
@@ -3638,6 +3662,10 @@ body::after {
 .main-blog--p {
   padding: 60px 0
 }
+.main-blog__body {
+  max-width: 1105px;
+  margin: 0 auto
+}
 .main-blog__title {
   font-size: 74px;
   line-height: 74px;
@@ -3710,6 +3738,8 @@ body::after {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  max-width: 1105px;
+  margin: 0 auto;
   min-height: 644px
 }
 .article__content {
@@ -3784,6 +3814,10 @@ body::after {
 }
 .main-article {
   padding: 115px 0 60px 0
+}
+.main-article__wrapper {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .main-article__wrapper img {
   max-width: 100%;
@@ -3898,6 +3932,8 @@ body::after {
   padding: 84px 0 180px 0
 }
 .map__body {
+  max-width: 1105px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -4005,6 +4041,10 @@ body::after {
 }
 .all-services {
   padding: 398px 0 140px 0
+}
+.all-services__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .all-services__nav--wrap {
   margin: 80px 0 72px 0
@@ -4157,6 +4197,8 @@ body::after {
   padding: 178px 0 10px 0
 }
 .breadcrumb__list {
+  max-width: 1105px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   position: relative;
@@ -4194,6 +4236,10 @@ body::after {
 }
 .main-service {
   padding: 15px 0 60px 0
+}
+.main-service__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .main-service__title {
   max-width: 777px;
@@ -4263,6 +4309,8 @@ body::after {
   padding: 60px 0 90px 0
 }
 .descr-service__body {
+  max-width: 1105px;
+  margin: 0 auto;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -4284,6 +4332,10 @@ body::after {
 }
 .respons {
   padding: 90px 0 85px 0
+}
+.respons__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .respons__top {
   display: flex;
@@ -4422,6 +4474,8 @@ body::after {
   padding: 85px 0 0 0
 }
 .price__body {
+  max-width: 1105px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between
@@ -4502,7 +4556,9 @@ body::after {
 }
 .more-service__body {
   position: relative;
-  z-index: 2
+  z-index: 2;
+  max-width: 1105px;
+  margin: 0 auto
 }
 .more-service__content {
   display: flex;
@@ -4587,6 +4643,8 @@ body::after {
   padding: 210px 0 80px 0
 }
 .cases__body {
+  max-width: 1105px;
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -4687,6 +4745,10 @@ body::after {
 .main-case {
   padding: 34px 0 0 0
 }
+.main-case__body {
+  max-width: 1105px;
+  margin: 0 auto
+}
 .main-case__wrapper {
   display: flex;
   align-items: flex-start;
@@ -4769,6 +4831,8 @@ body::after {
   padding: 80px 0
 }
 .reviews-case__body {
+  max-width: 1105px;
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start
@@ -4812,6 +4876,8 @@ body::after {
   margin: 80px 0 90px 0
 }
 .article-case__body {
+  max-width: 1105px;
+  margin: 0 auto;
   padding: 42px 0 0 0;
   border-top: 1px solid rgba(0,0,0,.2)
 }
@@ -4830,6 +4896,10 @@ body::after {
 }
 .more-cases {
   padding: 90px 0
+}
+.more-cases__body {
+  max-width: 1105px;
+  margin: 0 auto
 }
 .more-cases__title--top {
   padding-bottom: 36px
@@ -5516,6 +5586,10 @@ body::after {
     bottom: 35px;
     right: 40px
   }
+  .services__body {
+    max-width: 1105px;
+    margin: 0 auto
+  }
   .services__wrapper {
     padding: 120px 0
   }
@@ -5553,6 +5627,10 @@ body::after {
   .services__link:hover::before {
     -webkit-transform: translateX(8px);
     transform: translateX(8px)
+  }
+  .popular-services__body {
+    max-width: 1105px;
+    margin: 0 auto
   }
   .popular-services__label {
     padding-bottom: 60px
@@ -5743,6 +5821,10 @@ body::after {
     line-height: 1.4117647059;
     letter-spacing: .34px
   }
+  .partners__wrapper {
+    max-width: 1105px;
+    margin: 0 auto
+  }
   .partners__title {
     padding-top: 51px
   }
@@ -5777,6 +5859,10 @@ body::after {
   }
   .partners__tooltip--title {
     padding-bottom: 16px
+  }
+  .process__main {
+    max-width: 1105px;
+    margin: 0 auto
   }
   .process__slider {
     height: 563px
@@ -5847,6 +5933,10 @@ body::after {
   }
   .contacts--p {
     padding: 200px 0 84px 0
+  }
+  .contacts__wrapper {
+    max-width: 1105px;
+    margin: 0 auto
   }
   .contacts__info {
     max-width: 232px
@@ -6017,6 +6107,10 @@ body::after {
   .about-channel {
     padding: 99px 0 93px 0
   }
+  .about-channel__wrapper {
+    max-width: 1105px;
+    margin: 0 auto
+  }
   .about-channel__content {
     min-height: auto;
     padding: 47px 35px
@@ -6074,6 +6168,10 @@ body::after {
   .about-channel__youtube--link {
     margin-top: 9px
   }
+  .publications-block__body {
+    max-width: 1105px;
+    margin: 0 auto
+  }
   .publications-block__title--top {
     max-width: 583px
   }
@@ -6123,6 +6221,10 @@ body::after {
   }
   .content {
     padding: 90px 0 70px 0
+  }
+  .content__inner {
+    max-width: 1105px;
+    margin: 0 auto
   }
   .content__wrapper {
     height: 134px
