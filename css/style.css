@@ -697,6 +697,7 @@ body::after {
 .popup__content--contact {
   width: calc(40% - 2px);
   max-width: 100%;
+  min-width: 510px;
   flex: 1 1 auto;
   padding: 20px 24px 46px 35px
 }
@@ -6995,6 +6996,11 @@ body::after {
   .icon-menu span::after {
     bottom: 0
   }
+  .popup__content--contact {
+    width: calc(78% - 2px);
+    min-width: 598px;
+    padding: 25px 40px 64px 40px
+  }
   .header__container {
     padding: 0 0 0 40px
   }
@@ -8496,6 +8502,19 @@ body::after {
     min-width: 234px;
     margin-top: 42px
   }
+  .popup--contact__close {
+    -webkit-transform: translateX(18px);
+    transform: translateX(18px)
+  }
+  .popup--contact__top {
+    padding: 34px 0 36px 0
+  }
+  .popup--contact__form .form-contacts__wrap {
+    padding: 0 0 42px 0
+  }
+  .popup--contact__form .form-contacts__link {
+    margin: 0
+  }
   .footer__wrapper {
     flex-direction: column
   }
@@ -8653,6 +8672,11 @@ body::after {
     line-height: 24px;
     letter-spacing: .32px;
     padding: 6px 0
+  }
+  .popup__content--contact {
+    width: 100%;
+    min-width: auto;
+    padding: 17px 16px 30px 16px
   }
   .label {
     font-size: 12px;
@@ -10343,6 +10367,26 @@ body::after {
     margin-top: 32px;
     min-width: 209px
   }
+  .popup--contact__close {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  .popup--contact__close::before {
+    font-size: 18px
+  }
+  .popup--contact__top {
+    padding: 22px 0 10px 0
+  }
+  .popup--contact__form .form-contacts__link {
+    min-width: 209px;
+    height: 60px
+  }
+  .popup--contact__form .form-contacts__wrap {
+    padding: 0 0 30px 0
+  }
+  .popup--contact__list {
+    padding-top: 16px
+  }
   .footer__main {
     padding: 64px 0 0 0
   }
@@ -10491,6 +10535,9 @@ body::after {
   .map__time {
     font-size: 80px;
     line-height: 70px
+  }
+  .popup--contact__social {
+    width: calc(50% - 4px)
   }
 }
 @media (min-width:89.99875em) and (max-width:120em) {

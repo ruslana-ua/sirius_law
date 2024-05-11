@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240510094313">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240511174105">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -376,7 +376,7 @@
 					<div class="connect__wrapper">
 						<div class="connect__body">
 							<h3 class="connect__title">Ми завжди на зв'язку, готові допомогти та відповісти на ваші запитання.</h3>
-							<button type="" class="connect__link _icon-arrow_link">замовити консультацію</button>
+							<button data-popup="#popup" type="button" class="connect__link _icon-arrow_link">замовити консультацію</button>
 						</div>
 						<div class="connect__bg bg-main">
 							<div class="bg-main__pc lazy_image">
@@ -528,17 +528,97 @@
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрити</button>
-				<div class="popup__text">
-					Text
+	<div id="popup" aria-hidden="true" class="popup popup--contact">
+		<div class="popup__wrapper--contact">
+			<div class="popup__content popup__content--contact">
+				<div class="popup__contact popup--contact">
+					<div class="popup--contact__main">
+						<button data-close type="button" class="popup--contact__close _icon-close"></button>
+						<div class="popup--contact__top">
+							<div class="popup--contact__title">Отримайте безкоштовну консультацію</div>
+							<div class="popup--contact__text">
+								<p>Ми вам передзвонимо протягом 15 хвилин</p>
+							</div>
+						</div>
+						<form action="" class="popup--contact__form form-contacts">
+							<div class="form-contacts__wrap">
+								<div class="form-contacts__item">
+									<input data-error="Поле є обовʼязковим для заповнення" data-required="name" data-validate name="name" type="text" placeholder="Імʼя*" class="form-contacts__input">
+								</div>
+								<div class="form-contacts__item">
+									<input data-error="Поле є обовʼязковим для заповнення" data-required="phone" data-validate name="tel" type="tel" placeholder="+38(___)-___-__-__*" class="form-contacts__input phone-mask">
+								</div>
+							</div>
+							<button type="submit" class="form-contacts__link link-btn link-btn_b"><span class="link-btn__border"><span class="link-btn__icon _icon-arrow_link">Підтвердити</span></span></button>
+						</form>
+					</div>
+					<div class="popup--contact__bottom">
+						<div class="popup--contact__socials">
+							<a href="" class="popup--contact__social _icon-whatsapp">WhatsApp</a>
+							<a href="" class="popup--contact__social _icon-viber">Viber</a>
+							<a href="" class="popup--contact__social _icon-telegram">Telegram</a>
+						</div>
+						<div class="popup--contact__list">
+							<div class="popup--contact__item">
+								<div class="popup--contact__label">E-mail</div>
+								<a href="mailto:office@sirius-law.com.ua" class="popup--contact__link">office@sirius-law.com.ua</a>
+							</div>
+							<div class="popup--contact__item">
+								<div class="popup--contact__label">Номер телефону</div>
+								<a href="tel:+38 (099) 030-71-33" class="popup--contact__link">+38 (099) 030-71-33</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240510094313"></script>
+	<div id="popup-modal" aria-hidden="true" class="popup popup--contact">
+		<div class="popup__wrapper--contact">
+			<div class="popup__content popup__content--contact">
+				<div class="popup__contact popup--contact">
+					<div class="popup--contact__main">
+						<button data-close type="button" class="popup--contact__close _icon-close"></button>
+						<div class="popup--contact__top">
+							<div class="popup--contact__title">Отримайте безкоштовну консультацію</div>
+							<div class="popup--contact__text">
+								<p>Ми вам передзвонимо протягом 15 хвилин</p>
+							</div>
+						</div>
+						<form action="" class="popup--contact__form form-contacts">
+							<div class="form-contacts__wrap">
+								<div class="form-contacts__item">
+									<input data-error="Поле є обовʼязковим для заповнення" data-required="name" data-validate name="name" type="text" placeholder="Імʼя*" class="form-contacts__input">
+								</div>
+								<div class="form-contacts__item">
+									<input data-error="Поле є обовʼязковим для заповнення" data-required="phone" data-validate name="tel" type="tel" placeholder="+38(___)-___-__-__*" class="form-contacts__input phone-mask">
+								</div>
+							</div>
+							<button type="submit" class="form-contacts__link link-btn link-btn_b"><span class="link-btn__border"><span class="link-btn__icon _icon-arrow_link">Підтвердити</span></span></button>
+						</form>
+					</div>
+					<div class="popup--contact__bottom">
+						<div class="popup--contact__socials">
+							<a href="" class="popup--contact__social _icon-whatsapp">WhatsApp</a>
+							<a href="" class="popup--contact__social _icon-viber">Viber</a>
+							<a href="" class="popup--contact__social _icon-telegram">Telegram</a>
+						</div>
+						<div class="popup--contact__list">
+							<div class="popup--contact__item">
+								<div class="popup--contact__label">E-mail</div>
+								<a href="mailto:office@sirius-law.com.ua" class="popup--contact__link">office@sirius-law.com.ua</a>
+							</div>
+							<div class="popup--contact__item">
+								<div class="popup--contact__label">Номер телефону</div>
+								<a href="tel:+38 (099) 030-71-33" class="popup--contact__link">+38 (099) 030-71-33</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240511174105"></script>
 </body>
 
 </html>
