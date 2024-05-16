@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240514114436">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240516235118">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -379,10 +379,10 @@
 							<button data-popup="#popup" type="button" class="connect__link _icon-arrow_link">замовити консультацію</button>
 						</div>
 						<div class="connect__bg bg-main">
-							<div class="bg-main__pc lazy_image">
+							<div class="bg-main__pc lazy_image lazy_image">
 								<picture><source data-srcset="img/main/bg-connect_pc.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/bg-connect_pc.jpg" alt=""></picture>
 							</div>
-							<div class="bg-main__mob lazy_image">
+							<div class="bg-main__mob lazy_image lazy_image">
 								<picture><source data-srcset="img/main/bg-connect_mob.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/bg-connect_mob.jpg" alt=""></picture>
 							</div>
 						</div>
@@ -528,6 +528,72 @@
 			</div>
 		</footer>
 	</div>
+	<div id="popup-search" aria-hidden="true" class="popup popup-search">
+		<div class="popup-search__wrapper">
+			<div class="popup__content popup-search__content">
+				<div class="popup-search__row">
+					<a href="" class="header__logo">
+						<img src="img/main/logo_sirius_law.svg" alt="Logo Sirius Law">
+					</a>
+					<button data-close="" type="button" class="popup-search__close _icon-close"></button>
+				</div>
+				<div class="popup-search__search search">
+					<form action="#" class="search__form">
+						<div data-desktop="Напишіть, що ви шукаєте (назва або код товару)" data-mobile="Напишіть, що ви шукаєте" class="search__placeholder"></div>
+						<input type="text" name="search" class="search__input">
+						<button type="submit" class="search__button _icon-search"></button>
+						<button type="button" class="search__clear _icon-close"></button>
+					</form>
+				</div>
+				<div class="popup-search__body">
+					<ul class="popup-search__list">
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Супровід публічних закупівель</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Судовий супровід</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Корпоративне право, злиття та поглинання</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Оподаткування та митне право</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Земельне право та природні ресурси</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Інтелектуальна власність</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Антимонопольне та конкурентне право</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Приватні клієнти</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Трудове право</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Нерухомість та будівництво</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Торгівля та комерційна діяльність</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Договірне право</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">ІТ право</a>
+						</li>
+						<li class="popup-search__item">
+							<a href="" class="popup-search__link">Міжнародна торгівля</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="popup" aria-hidden="true" class="popup popup--contact">
 		<div class="popup__wrapper--contact">
 			<div class="popup__content popup__content--contact">
@@ -618,13 +684,14 @@
 							</div>
 						</div>
 						<div class="form-contacts__row--modal">
-							<button type="submit" class="form-contacts__link--modal _icon-arrow"">Звʼяжіться зі мною</button></div>
-					</form>
-				</div>
+							<button type="submit" class="form-contacts__link--modal _icon-arrow"">Звʼяжіться зі мною</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
-	<script src=" js/app.min.js?_v=20240514114436"></script>
+	<script src=" js/app.min.js?_v=20240516235118"></script>
 </body>
 
 </html>

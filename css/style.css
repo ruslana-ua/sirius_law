@@ -802,6 +802,82 @@ body::after {
   min-height: 64.4%;
   padding: 20px 20px 35px 38px
 }
+.popup-search__wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--wh);
+  padding: 18px 25px 60px 35px
+}
+.popup-search__close::before {
+  font-size: 27px
+}
+.search__form {
+  position: relative
+}
+.search__input {
+  width: 100%;
+  padding: 27px 48px 27px 78px;
+  height: 75px;
+  border-radius: 0!important;
+  background: var(--wh);
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  border-bottom: 1px solid rgba(0,0,0,.2)
+}
+.search__input::-webkit-input-placeholder {
+  color: rgba(0,0,0,.3)
+}
+.search__input:-ms-input-placeholder {
+  color: rgba(0,0,0,.3)
+}
+.search__input::-ms-input-placeholder {
+  color: rgba(0,0,0,.3)
+}
+.search__input::placeholder {
+  color: rgba(0,0,0,.3)
+}
+.search__button {
+  position: absolute;
+  top: 1px;
+  left: 19px;
+  width: 48px;
+  height: 100%
+}
+.search__button::before {
+  font-size: 18px;
+  opacity: .4;
+  transition: all .2s ease-in-out 0s
+}
+.search__button:hover::before {
+  opacity: 1
+}
+.search__clear {
+  position: absolute;
+  width: 48px;
+  height: 100%;
+  top: 1px;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease-in-out
+}
+.search__clear::before {
+  font-size: 18px;
+  opacity: .4;
+  transition: all .2s ease-in-out
+}
+.search__clear.visible {
+  opacity: 1;
+  visibility: visible
+}
+.search__clear:hover::before {
+  opacity: 1
+}
 .baron {
   position: relative;
   overflow: hidden;
@@ -7198,6 +7274,14 @@ body::after {
   .popup--modal__top {
     min-height: auto
   }
+  .search__input {
+    height: 55px;
+    padding: 16px 48px 21px 48px
+  }
+  .search__button {
+    top: -2px;
+    left: 2px
+  }
   .header__container {
     padding: 0 0 0 40px
   }
@@ -9404,6 +9488,9 @@ body::after {
     margin: 0
   }
   .contacts--p2 .contacts__info {
+    padding: 0
+  }
+  .contacts__container {
     padding: 0
   }
   .contacts__info {
