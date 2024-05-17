@@ -808,11 +808,96 @@ body::after {
   height: 100%;
   top: 0;
   left: 0;
+  overflow: auto;
   background-color: var(--wh);
   padding: 18px 25px 60px 35px
 }
+.popup-search__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 100%
+}
+.popup-search__main {
+  flex: 1 1 auto
+}
+.popup-search__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px
+}
 .popup-search__close::before {
-  font-size: 27px
+  font-size: 29px
+}
+.popup-search__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  max-width: 620px;
+  min-height: 480px;
+  padding: 40px 0
+}
+.popup-search__search .search__form {
+  width: 100%
+}
+.popup-search__search .search__input {
+  font-size: 34px;
+  height: 100%;
+  line-height: 42px;
+  padding: 26.5px 58px 26.5px 0
+}
+.popup-search__search .search__button {
+  left: auto;
+  right: 0
+}
+.popup-search__search .search__button::before {
+  opacity: 1
+}
+.popup-search__search .search__button:hover::before {
+  opacity: .4
+}
+.popup-search__search .search__clear {
+  right: 30px
+}
+.popup-search__search .search__clear::before {
+  opacity: 1
+}
+.popup-search__search .search__clear:hover::before {
+  opacity: .4
+}
+.popup-search__body {
+  max-width: 1107px;
+  margin: 0 auto
+}
+.popup-search__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 6px;
+  flex-wrap: wrap
+}
+.popup-search__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 11px 18px;
+  white-space: nowrap;
+  border: 1px solid rgba(0,0,0,.2);
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: .14px
+}
+.popup-search__link:hover {
+  background-color: var(--accent);
+  border: 1px solid var(--accent)
 }
 .search__form {
   position: relative
@@ -1006,6 +1091,19 @@ body::after {
   z-index: 4;
   background-color: transparent;
   color: var(--wh)
+}
+.header::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--wh);
+  transition: right .4s cubic-bezier(.6,.1,.68,.53);
+  z-index: 22
 }
 .header._header-scroll {
   transition: top .5s ease 0s;
@@ -5708,6 +5806,66 @@ body::after {
 .popup--contact__link:hover {
   opacity: .6
 }
+.page-search {
+  padding: 210px 0 132px 0
+}
+.page-search__top {
+  padding: 0 0 64px 0
+}
+.page-search__label {
+  display: flex;
+  align-items: center;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  font-size: 11px;
+  line-height: 140%;
+  letter-spacing: .77px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.6)
+}
+.page-search__label::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  color: var(--black);
+  margin: 0 0 2px 0
+}
+.page-search__title {
+  padding: 24px 0
+}
+.page-search__text {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: .34px
+}
+.page-search__main {
+  border-top: 1px solid var(--black)
+}
+.page-search__main--title {
+  max-width: 790px;
+  padding: 28px 0 64px 0;
+  font-size: 34px;
+  line-height: 42px
+}
+.page-search__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  font-size: 20px;
+  line-height: 28px
+}
+.page-search__link:hover {
+  color: rgba(0,0,0,.6)
+}
 .footer {
   background: var(--wh);
   border-top: 1px solid rgba(0,0,0,.1)
@@ -6114,6 +6272,9 @@ body::after {
     letter-spacing: 1.43px
   }
   .header {
+    height: 73px
+  }
+  .header::after {
     height: 73px
   }
   .header__container {
@@ -7274,6 +7435,21 @@ body::after {
   .popup--modal__top {
     min-height: auto
   }
+  .popup-search__search {
+    padding: 80px 0;
+    max-width: 100%;
+    min-height: auto
+  }
+  .popup-search__search .search__input {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 26.5px 58px 26.5px 0
+  }
+  .popup-search__search .search__input {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 16.5px 58px 16.5px 0
+  }
   .search__input {
     height: 55px;
     padding: 16px 48px 21px 48px
@@ -7293,6 +7469,8 @@ body::after {
   .header__icon span::before {
     background-color: var(--wh)
   }
+  ._header-scroll .header__icon span::after,
+  ._header-scroll .header__icon span::before,
   .dark-menu .header__icon span::after,
   .dark-menu .header__icon span::before {
     background-color: var(--black)
@@ -8810,6 +8988,12 @@ body::after {
   .popup--contact__form .form-contacts__link {
     margin: 0
   }
+  .page-search {
+    padding: 175px 0 80px 0
+  }
+  .page-search__main--title {
+    max-width: 100%
+  }
   .footer__wrapper {
     flex-direction: column
   }
@@ -9016,6 +9200,12 @@ body::after {
   .popup--modal__top {
     padding: 20px 20px 24px 20px
   }
+  .popup-search__wrapper {
+    padding: 18px 16px 60px 16px
+  }
+  .popup-search__close::before {
+    font-size: 20px
+  }
   .label {
     font-size: 12px;
     line-height: 1.2;
@@ -9029,6 +9219,14 @@ body::after {
   .header {
     height: 63px
   }
+  .menu-open .header::after {
+    right: 0;
+    opacity: 1;
+    visibility: visible
+  }
+  .header::after {
+    height: 63px
+  }
   .header__container {
     padding: 0 16px
   }
@@ -9038,7 +9236,7 @@ body::after {
   .header__icon {
     margin-top: 0;
     position: relative;
-    z-index: 22
+    z-index: 23
   }
   .menu-open .header__icon span::after,
   .menu-open .header__icon span::before {
@@ -10750,6 +10948,20 @@ body::after {
   .popup--contact__list {
     padding-top: 16px
   }
+  .page-search {
+    padding: 175px 0 60px 0
+  }
+  .page-search__top {
+    padding: 0 0 32px 0
+  }
+  .page-search__main--title {
+    padding: 28px 0 32px 0
+  }
+  .page-search__link {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: .34px
+  }
   .footer__main {
     padding: 64px 0 0 0
   }
@@ -10834,6 +11046,16 @@ body::after {
   }
 }
 @media (max-width:29.99875em) {
+  .popup-search__item {
+    width: 100%
+  }
+  .popup-search__link {
+    padding: 11px;
+    font-size: 12px;
+    line-height: 12px;
+    width: 100%;
+    white-space: wrap
+  }
   .contacts__main {
     flex-direction: column
   }
