@@ -10007,7 +10007,36 @@
                             lng: 30.502856468278743
                         },
                         zoom: 18,
-                        mapId: "f28c610d6cbb939c"
+                        styles: [ {
+                            featureType: "all",
+                            stylers: [ {
+                                saturation: 0
+                            }, {
+                                hue: "#e7ecf0"
+                            } ]
+                        }, {
+                            featureType: "road",
+                            stylers: [ {
+                                saturation: -70
+                            } ]
+                        }, {
+                            featureType: "transit",
+                            stylers: [ {
+                                visibility: "off"
+                            } ]
+                        }, {
+                            featureType: "poi",
+                            stylers: [ {
+                                visibility: "off"
+                            } ]
+                        }, {
+                            featureType: "water",
+                            stylers: [ {
+                                visibility: "simplified"
+                            }, {
+                                saturation: -60
+                            } ]
+                        } ]
                     });
                     const image = {
                         url: "img/icons/marker.svg",
