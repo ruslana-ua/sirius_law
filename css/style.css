@@ -453,6 +453,9 @@ textarea {
   transition: transform .3s ease 0s;
   transition: transform .3s ease 0s,-webkit-transform .3s ease 0s
 }
+.dark-menu [data-dropdown-button] {
+  color: var(--black)
+}
 [data-dropdown-button]::before {
   display: flex;
   align-items: center;
