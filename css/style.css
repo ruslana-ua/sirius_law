@@ -172,7 +172,8 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   color: inherit;
-  background-color: transparent
+  background-color: transparent;
+  transition: all .2s ease-in-out 0s
 }
 input,
 textarea {
@@ -834,6 +835,9 @@ body::after {
 }
 .popup-search__close::before {
   font-size: 29px
+}
+.popup-search__close:active {
+  opacity: .6
 }
 .popup-search__search {
   display: flex;
@@ -1721,6 +1725,9 @@ body::after {
   padding: 50px 58px 50px 50px;
   background: linear-gradient(45deg,transparent 22px,var(--accent) 22px)
 }
+.popular-services__item--last:hover {
+  opacity: .7
+}
 .popular-services__title--last {
   position: relative;
   z-index: 2
@@ -2553,6 +2560,9 @@ body::after {
   font-size: 22px;
   color: #0db6ff
 }
+.form-contacts__link--modal:hover {
+  color: rgba(0,0,0,.6)
+}
 .form-contacts__bottom {
   display: flex;
   align-items: flex-end;
@@ -2870,6 +2880,9 @@ body::after {
 .about-channel__link::before {
   font-size: 11px;
   margin-right: 16px
+}
+.about-channel__link:hover {
+  color: var(--accent)
 }
 .about-channel__info {
   width: calc(39% - 7px);
@@ -4061,6 +4074,9 @@ body::after {
   font-weight: 500;
   line-height: 28px
 }
+.current__title:hover {
+  opacity: .6
+}
 .main-blog {
   padding: 90px 0 60px 0
 }
@@ -4484,6 +4500,10 @@ body::after {
   border: 1px solid rgba(0,0,0,.2)
 }
 .all-services__link.active {
+  border: 1px solid var(--accent);
+  background-color: var(--accent)
+}
+.all-services__link:not(.active):hover {
   border: 1px solid var(--accent);
   background-color: var(--accent)
 }
@@ -5002,6 +5022,9 @@ body::after {
   padding-top: 34px;
   border-top: 1px solid rgba(255,255,255,.3)
 }
+.more-service__title__row:hover {
+  opacity: .7
+}
 .more-service__title {
   max-width: 749px;
   font-size: 62px;
@@ -5106,13 +5129,13 @@ body::after {
   -moz-column-gap: 57px;
   column-gap: 57px
 }
+.cases__link:hover {
+  opacity: .6
+}
 .cases__link--title {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: .34px
-}
-.cases__link--title:hover {
-  opacity: .6
 }
 .cases__arrow--wrap {
   display: flex;
@@ -5227,10 +5250,14 @@ body::after {
   justify-content: center;
   width: 94px;
   height: 94px;
-  background-color: var(--accent)
+  background-color: var(--accent);
+  z-index: 2
 }
 .main-case__link::before {
   font-size: 22px
+}
+.main-case__link:hover {
+  opacity: .7
 }
 .main-case__name {
   font-size: 17px;
@@ -5330,6 +5357,9 @@ body::after {
   flex-direction: column;
   min-height: 445px
 }
+.more-cases__slide:hover .more-cases__title {
+  opacity: .6
+}
 .more-cases__info--wrap {
   flex: 1 1 auto
 }
@@ -5414,9 +5444,6 @@ body::after {
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: all .2s ease-in-out 0s
-}
-.more-cases__title:hover {
-  opacity: .6
 }
 .more-cases__arrow::before {
   margin: 2px 2px 0 0;
@@ -7622,6 +7649,9 @@ body::after {
   }
   .services__link::before {
     margin-right: 10px
+  }
+  .services__link:hover {
+    opacity: .6
   }
   .services__link:hover::before {
     -webkit-transform: translateX(0);
@@ -9960,6 +9990,9 @@ body::after {
   .publications-block__row {
     padding: 32px 0 24px 0
   }
+  .publications-block__link:hover .publications-block__title {
+    opacity: .7
+  }
   .publications-block__item {
     color: var(--wh);
     padding: 27px 20px
@@ -9987,7 +10020,8 @@ body::after {
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
     column-gap: 32px;
-    margin: 8px 0 0 0
+    margin: 8px 0 0 0;
+    transition: all .2s ease-in-out 0s
   }
   .publications-block__title::before {
     display: flex;
@@ -11170,6 +11204,9 @@ body::after {
   }
 }
 @media (any-hover:hover) {
+  .popup-search__close:hover {
+    opacity: .6
+  }
   .info-socials__button:hover::before {
     opacity: .6
   }
@@ -11182,9 +11219,6 @@ body::after {
   }
   .reviews__swiper-button:not(.swiper-button-disabled):hover {
     background: var(--accent)
-  }
-  .about-channel__link:hover {
-    color: var(--accent)
   }
   .about-channel__youtube:hover img {
     -webkit-transform: scale(1.1);
@@ -11228,9 +11262,6 @@ body::after {
   .current__inner:hover {
     background-color: var(--accent-hover)
   }
-  .current__title:hover {
-    opacity: .6
-  }
   .pagination__button:hover::before {
     color: #4cb4e0
   }
@@ -11244,10 +11275,6 @@ body::after {
   }
   .article__link:hover {
     background-color: var(--accent-hover)
-  }
-  .all-services__link:not(.active):hover {
-    border: 1px solid var(--accent);
-    background-color: var(--accent)
   }
   .main-service__link:hover {
     background-color: var(--accent-hover)
